@@ -1,5 +1,6 @@
 const fill = document.querySelector('.fill')
 const empties = document.querySelectorAll('.empty')
+const pieces = document.querySelectorAll('img')
 
 fill.addEventListener('dragstart', dragStart)
 fill.addEventListener('dragsend', dragEnd)

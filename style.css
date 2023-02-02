@@ -4,7 +4,6 @@
 }
 
 body {
-
     margin: 0;
     display: flex;
     align-items: center;
@@ -14,16 +13,34 @@ body {
     background-color: steelblue;
 }
 
+#puzzlecontainer {
+        display: grid;
+        grid: repeat(3, 150px) / auto-flow 150px;
+}
+
+#puzzlecontainer > div {
+    /* background-color: #8ca0ff; */
+    width: 150px;
+    height: 150px;
+}
+
 .empty {
     height: 150px;
     width: 150px;
     margin: 10px;
     border: solid 3px black;
     background: white;
+    position: relative;
+}
+
+img {
+    height: 147px;
+    width: 147px;
+    position: absolute;
 }
 
 .fill {
-    background-image: url('https://source.unsplash.com/random/150x150');
+    /* background-image: url('https://source.unsplash.com/random/150x150'); */
     height: 145px;
     width: 145px;
     cursor: pointer;
@@ -39,9 +56,9 @@ body {
     border-style: dashed;
 }
 
-@media(max-width: 800px){
+/* @media(max-width: 800px){
     body {
         flex-direction: column;
     }
-}
+} */
 
